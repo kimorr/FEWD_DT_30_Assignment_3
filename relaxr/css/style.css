@@ -1,0 +1,372 @@
+/*
+Project Name: Relaxr Blog (2 Column Layout)
+Client: Relaxr
+Author: Kim Orr
+Developer @GA in DTLA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: #f0efef;
+  font-family: 'Open Sans', sans-serif;
+  color: #606161;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav {
+  padding: 25px 60px;
+  width: 100%;
+}
+
+h1 {
+  float: left;
+  width: 20%;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+header {
+  background: url(../images/header_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#main_nav {
+  float: left;
+  width: 80%;
+  text-align: right;
+}
+
+#main_nav li {
+  display: inline-block;
+  padding-left: 20px;
+  text-align: right;
+}
+
+#main_container {
+  width: 1080px;
+  padding: 160px 60px 40px 60px;
+  margin: 0 auto;
+}
+
+#content_container {
+  float: left;
+  width: 700px;
+  margin-right: 20px;
+}
+
+#benefits {
+  width: 50%;
+  min-width: 340px;
+  max-width: 440px;
+  padding-right: 60px;
+  margin: 40px 60px;
+}
+
+#testimonial {
+  padding: 40px 0;
+  background: url(../images/testimonial_bg.jpg);
+  background-size: cover; 
+  text-align: center;
+  font-size: 18px;
+  color: #f0efef; 
+}
+
+#testimonial blockquote {
+  width: 40%;
+  min-width: 300px;
+  font-weight: 300;
+  font-style: italic;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+
+article {
+  padding-bottom: 20px;
+}
+
+article img {
+  padding-bottom: 20px;
+}
+
+article p {
+  padding-bottom: 40px;
+}
+
+article a {
+  display: block;
+  padding-bottom: 10px;
+  text-align: right;
+  text-decoration: none;
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+article a:after {
+  content: " >";
+}
+
+#aside_container {
+  float: left;
+  width: 240px;
+}
+
+aside, .vertical_ad {
+  padding-bottom: 40px;
+}
+
+#signup_container {
+  background-color: #f9e42e;
+  padding: 20px;
+  text-align: center;
+}
+
+#signup_popup {
+  display: none;
+}
+
+footer {
+  background-color: #121212;
+  text-align: center;
+}
+
+#brand {
+  padding: 40px 0;
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#follow_container {
+  padding-bottom: 40px;
+}
+
+#follow_container img {
+  -moz-transform:scale(0.6);
+  -webkit-transform:scale(0.6);
+  transform:scale(0.6);
+  padding: 0 10px;
+}
+
+footer p {
+  padding-bottom: 40px;
+  color: white;
+  font-size: 12px;
+  font-weight: 300; 
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#solid_nav {
+  background-color: #033048;
+  position: fixed;
+  top: 0;
+}
+
+#transparent_nav {
+  background-color: #033048;
+  position: fixed;
+  top: 0;
+}
+
+.motto {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #f0efef;
+  padding: 160px 0 60px 0;
+}
+
+#main_nav a {
+  text-decoration: none;
+  color: #f9e42e;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#main_nav a:hover {
+  color: white;
+}
+
+
+h2 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#benefits h3 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: #033048;
+  line-height: 1em;
+}
+
+#benefits p, #benefits ul {
+  font-weight: 300;
+  font-size: 13px;
+  color: #606161;
+  line-height: 1.7em;
+}
+
+#benefits ul {
+  list-style: disc;
+  padding: 20px 20px 0 60px;
+}
+
+#testimonial blockquote:before {
+  content: "\0022";
+}
+
+#testimonial blockquote:after {
+  content: "\0022";
+}
+
+#testimonial .credit {
+  font-weight: 600;
+}
+
+#testimonial .credit:before {
+  content: "\2013\00a0";
+  font-weight: 300;
+}
+
+article p:first-letter {
+  font-size: 64px;
+  line-height: 1em;
+  float: left;
+  margin: 5px 10px 0 0;
+  color: #033048;
+  font-weight: 600;
+}
+
+hr {
+  background-color: #606161;
+}
+
+aside h3 {
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+aside {
+  color: #033048;
+  line-height: 1.3em;
+}
+
+aside a {
+  text-decoration: none;
+  color: #033048;
+}
+
+aside p {
+  font-size: 22px;
+}
+
+.more_link {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #e0cd29;
+}
+
+button {
+  padding: 8px 30px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#get_btn {
+  display: block;
+  margin: 0 auto 60px auto;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #f9e42e;
+  color: #033048;
+}
+
+#signup_btn, #close_signup_btn {
+  font-size: 12px;
+  font-weight: 800;
+  background-color: #033048;
+  color: #f0efef;
+  display: block;
+  margin: 0 auto;
+}
+
+#signup_popup_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3,48,72,0.9);
+}
+
+#signup_popup_fg {
+  background-color: white;
+  border-radius: 4px;
+  width: 400px;
+  position: fixed;
+  top: 160px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #033048;
+}
+
+#signup_popup_fg p {
+  padding-bottom: 20px;
+}
+
+#benefits li {
+  padding: 2px 0;
+}
+
+
